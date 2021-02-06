@@ -1,0 +1,71 @@
+.chessboard {
+
+
+
+    .item {
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        flex-wrap: wrap;
+
+        &:nth-of-type(even) {
+            flex-direction: row-reverse;
+        }
+
+        @media (max-width: 800px) {
+            flex-direction: column-reverse;
+
+            &:nth-of-type(even) {
+                flex-direction: column-reverse;
+            }
+        }
+
+        .left {
+            width: 50%;
+            padding: 200px;
+            background-color: rgba($color: #ccc, $alpha: 0.5);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            position: relative;
+            @include triangle($secondaryColor);
+            @include overlay(#000, 0.6);
+
+
+            @media (max-width: 800px) {
+                width: 100%;
+                padding: 10px;
+            }
+
+            h2 {
+                font-size: 40px;
+                text-align: center;
+                margin: 0;
+            }
+
+        }
+
+        .right {
+            width: 50%;
+            background-image: url("../img/newbg.jpg");
+            background-size: cover;
+            background-position: center;
+
+            @media (max-width: 800px) {
+                width: 100%;
+
+            }
+
+            img {
+                display: none;
+
+                @media (max-width: 800px) {
+                    max-width: 40%;
+                    display: block;
+
+                }
+            }
+        }
+    }
+
+}

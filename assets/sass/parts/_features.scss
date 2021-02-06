@@ -1,0 +1,24 @@
+.features {
+    .containernew {
+        display: flex;
+        justify-content: center;
+
+        .box1 {
+
+            .links {
+
+                a {
+                    color: $secondaryColor;
+
+                    i {
+                        text-align: center;
+                        border: 0.5px solid #000000;
+                        border-radius: 100%;
+                    }
+                }
+            }
+
+        }
+
+    }
+}

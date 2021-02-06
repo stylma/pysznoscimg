@@ -1,0 +1,73 @@
+.footer {
+    color: white;
+    background-color: #88dfbf;
+
+    //   @include overlay(#000, 0.2);
+    .social-icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        a {
+            text-decoration: none;
+        }
+        i {
+            padding-top: 10px;
+            font-size: 34px;
+            display: inline-block;
+            margin: 5px;
+            color: white;
+
+            &:hover {
+                color: pink;
+                transform: scale(1.2);
+            }
+        }
+
+
+    }
+
+
+    .footer-text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        a {
+            text-decoration: none;
+            color: white;
+            margin: 10px;
+            font-family: 'Dancing Script',
+                cursive;
+            font-size: 24px;
+            scroll-behavior: smooth;
+
+            &:hover {
+                color: pink;
+                transform: scale(1.1);
+            }
+        }
+    }
+
+}
+
+.footer-outer {
+    background-color: #034836;
+    text-align: center;
+    color: white;
+    padding: 2px;
+
+    @include overlay(#000, 0.2);
+
+    p {
+        text-align: center;
+        display: inline;
+    }
+
+    span {
+        color: pink;
+        display: inline;
+        font-size: 14px;
+    }
+
+}

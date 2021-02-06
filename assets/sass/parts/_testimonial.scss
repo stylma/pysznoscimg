@@ -1,0 +1,77 @@
+.testimonial {
+
+background-image: url(/assets/img/unrevied/brooke-lark-ZkgWJ4BfgsE-unsplash.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+  @include overlay(#000, 0.2);
+
+    .container {
+        padding-top: 5%;
+        padding-bottom: 5%;
+    
+
+        #slider {
+            margin-top: 5%;
+
+            .owl-dots {
+                text-align: center;
+            }
+
+            .owl-dot {
+                display: inline-block;
+                height: 23px;
+                width: 23px;
+                background-color: #fff;
+                opacity: .8;
+                margin: 0 15px;
+                border-radius: 50%;
+                outline: none;
+            }
+
+            .owl-dot.active {
+
+                background-color: $logoBlue;
+
+            }
+
+
+            .content {
+                background-image: url(/assets/img/deva-williamson-K2ZFPgTjMDI-unsplash.jpg);
+                background-position: center;
+                // background-size: cover;
+                text-align: center;
+                padding: 40px;
+                border-radius: 25px;
+                
+
+                h3 {
+                    font-size: 20px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    margin-bottom: 20px;
+                    font-family: $mainfontfamily;
+                }
+
+                p {
+                    line-height: 1.9;
+                     font-family: $mainfontfamilyitalic;
+                }
+
+                .img-area {
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 50%;
+                    display: inline-block;
+                    overflow: hidden;
+
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

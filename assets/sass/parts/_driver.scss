@@ -1,0 +1,114 @@
+.driver {
+    height: 100vh;
+    background-image: url("/assets/img/unrevied/brooke-lark-pGM4sjt_BdQ-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+
+    @include overlay(#000, 0.2);
+
+    @media (max-width: width 1000px) {
+        background-position: left center;
+    }
+
+    .bounce {
+        position: absolute;
+        animation: bounce 1s infinite;
+        z-index: 1;
+
+        a {
+            text-decoration: none;
+            font-size: 60px;
+            color: $logoPink;
+
+            &:hover {
+                color: white;
+                transform: scale(1.3);
+                transition: all 0.6s;
+            }
+        }
+
+        @keyframes bounce {
+            0% {
+                bottom: 5px;
+            }
+
+            25%,
+            75% {
+                bottom: 15px;
+            }
+
+            50% {
+                bottom: 20px;
+            }
+
+            100% {
+                bottom: 0;
+            }
+        }
+    }
+
+    img {
+        width: 500px;
+        z-index: 1;padding: 50px;
+
+          @media(max-width: 800px) {
+              width: 80%;
+              
+          }
+    }
+
+    h3 {
+        color: $mainColor;
+        line-height: 1.1;
+        position: relative;
+        z-index: 1;
+        text-align: center;
+        font-weight: 400;
+        @include fluid-type (30px, 70px);
+        font-family: 'Dancing Script',
+            cursive;
+        padding-top: 100px;
+    }
+
+    h1 {
+
+        color: $mainColor;
+        line-height: 1.1;
+        position: relative;
+        z-index: 1;
+        text-align: center;
+        font-weight: 400;
+        @include fluid-type (30px, 70px);
+
+
+    }
+
+    .button {
+        text-decoration: none;
+        color: $mainColor;
+        border: 1px solid $mainColor;
+        position: relative;
+        z-index: 1;
+        padding: 15px 30px;
+        transition: 0.4s;
+        font-size: 16px;
+        line-height: 1;
+        font-weight: 600;
+        letter-spacing: 1px;
+        font-family: 'Dancing Script',
+            cursive;
+
+        &:hover {
+            background-color: $mainColor;
+            color: $secondaryColor;
+
+            font-weight: 700;
+        }
+    }
+}

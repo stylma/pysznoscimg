@@ -1,0 +1,165 @@
+.facts {
+    // padding: 100px 0;
+    background-image: url('/assets/img/unrevied/brooke-lark-YwSy97_Rk1o-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-attachment: fixed;
+    @include overlay(#000, 0.2);
+
+    .container {
+        padding-top: 5%;
+        padding-bottom: 5%;
+
+
+
+        h2 {
+            text-align: center;
+            color: white;
+            text-transform: uppercase;
+            font-family: 'Dancing Script',
+                cursive;
+            font-size: 30px;
+            font-weight: bold;
+            background-color: rgba($color: #000000, $alpha: 0.5);
+
+        }
+
+        #slider-offer {
+            margin-top: 5%;
+
+            .owl-dots {
+                text-align: center;
+            }
+
+            .owl-dot {
+                display: inline-block;
+                height: 23px;
+                width: 23px;
+                background-color: #fff;
+                opacity: .8;
+                margin: 0 15px;
+                border-radius: 50%;
+                outline: none;
+            }
+
+            .owl-dot.active {
+
+                background-color: $logoBlue;
+
+            }
+
+
+            .content {
+                background-image: url(/assets/img/cake-offer.jpg);
+                background-position: center;
+                background-size: cover;
+                text-align: center;
+                padding: 40px;
+                border-radius: 25px;
+                height: 600px;
+
+               
+
+
+                h3 {
+                    font-size: 28px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    margin-bottom: 20px;
+                    font-family: $mainfontfamily;
+                }
+
+
+            }
+
+            .content-mini {
+                background-image: url(/assets/img/mini-offer2.jpg);
+                background-position: center;
+                background-size: cover;
+                text-align: center;
+                padding: 40px;
+                border-radius: 25px;
+                height: 600px;
+
+                h3 {
+                    font-size: 28px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    margin-bottom: 20px;
+                    font-family: $mainfontfamily;
+                }
+
+
+            }
+
+            .content-sweet {
+                background-image: url(/assets/img/sweet-offer.jpg);
+                background-position: center;
+                background-size: cover;
+                text-align: center;
+                padding: 40px;
+                border-radius: 25px;
+                height: 600px;
+
+                h3 {
+                    font-size: 28px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    margin-bottom: 20px;
+                    font-family: $mainfontfamily;
+                }
+
+
+            }
+        }
+    }
+
+    .content-area {
+         &:hover {
+             .layer {
+                 opacity: 1;
+             }
+         }
+
+         .layer {
+             position: absolute;
+             background-color: rgba($color: $logoPink, $alpha: 0.5);
+             width: 100%;
+             height: 100%;
+             left: 0%;
+             top: 0%;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             opacity: 0;
+             transition: 0.3s;
+             border-radius: 25px;
+
+             @media (max-width:700px) {
+                 position: static;
+                 margin: 20px 0 0 0;
+                 opacity: 1;
+             }
+
+             ul {
+                list-style-type: none;
+                 li{
+                     a{
+                         text-transform: uppercase;
+                         font-weight: bold;
+                         text-decoration: none;
+                         color: #fff;
+                         font-size: 20px;
+
+                         &:hover {
+                             color: $logoBlue;
+                         }
+                     }
+                 }
+             }
+
+         }
+    }
+
+}
