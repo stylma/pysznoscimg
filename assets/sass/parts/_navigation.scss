@@ -10,24 +10,19 @@
     align-items: center;
     transition: 0.5s;
 
-
     &.menu-open {
-
         background-color: $mainColor;
 
         .logo {
-
             position: relative;
             z-index: 5;
 
             .logo-black {
                 display: block;
-
             }
 
             .logo-light {
                 display: none;
-
             }
         }
 
@@ -36,7 +31,6 @@
                 background-color: $secondaryColor;
             }
         }
-
 
         ul {
             display: flex;
@@ -53,9 +47,7 @@
             backdrop-filter: blur(5px);
 
             li {
-
                 margin: 0 0 15px 0;
-
 
                 &:last-child {
                     margin: 0;
@@ -64,49 +56,39 @@
                 a {
                     padding: 0;
                     color: $secondaryColor;
-                    font-family: 'Dancing Script',
-                        cursive;
+                    font-family: 'Dancing Script', cursive;
                     text-decoration: none;
                 }
             }
         }
-
     }
 
     &.move {
         background-color: rgba($mainColor, $alpha: 0.9);
-
         transition: 0.5s;
 
         .logo {
-
             .logo-black {
                 display: block;
-
             }
 
             .logo-light {
                 display: none;
-
             }
         }
 
         ul {
-
             li {
                 a {
                     color: $secondaryColor;
-                    font-family: 'Dancing Script',
-                        cursive;
-                        text-decoration: none;
+                    font-family: 'Dancing Script', cursive;
+                    text-decoration: none;
 
                     &:hover {
                         color: rgb(66, 66, 66);
                         font-weight: 600;
                         transform: scale(1.2);
                     }
-
-
                 }
             }
         }
@@ -118,10 +100,7 @@
         }
     }
 
-
     .logo {
-
-
         .logo-black {
             display: none;
         }
@@ -147,8 +126,6 @@
             display: none;
         }
 
-
-
         li {
             margin-right: 20px;
 
@@ -160,8 +137,7 @@
                 color: #ffffff;
                 padding: 30px 15px;
                 display: inline-block;
-                font-family: 'Dancing Script',
-                    cursive;
+                font-family: 'Dancing Script', cursive;
                 font-size: 28px;
                 // color: #EF67A7;
                 text-decoration: none;
@@ -172,13 +148,11 @@
                     transform: scale(1.2);
                 }
             }
-
         }
-
-
     }
 
     .hamburger {
+        margin: 2.5em;
         padding: 0;
         width: 40px;
         height: 24px;
@@ -193,12 +167,11 @@
             display: block;
         }
 
-
         span {
             height: 4px;
             width: 100%;
             position: absolute;
-            background-color: $mainColor;
+            background-color: $logoPink;
             border-radius: 4px;
 
             &:nth-of-type(1) {
@@ -215,7 +188,6 @@
             &:nth-of-type(3) {
                 bottom: 0;
                 left: 0;
-
             }
         }
 
@@ -236,6 +208,5 @@
                 }
             }
         }
-
     }
 }

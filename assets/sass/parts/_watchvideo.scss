@@ -6,6 +6,10 @@
     position: relative;
     background-position: top;
 
+    @media (max-width: 800px) {
+        padding: 10px;
+    }
+
     @include overlay(#000, 0.6);
 
     .tri {

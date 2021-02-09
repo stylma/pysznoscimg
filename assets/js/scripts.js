@@ -1,4 +1,4 @@
-let navigation = document.getElementById('nav');
+const navigation = document.getElementById('nav');
 
 window.addEventListener('scroll', function () {
     let scrollYPosition = window.pageYOffset;
@@ -16,13 +16,22 @@ AOS.init();
 
 // HAMBURGER
 
-let hamburger = document.getElementById('hamburger-js');
+const hamburger = document.getElementById('hamburger-js');
 
 hamburger.addEventListener('click', function () {
     hamburger.classList.toggle('open')
     navigation.classList.toggle('menu-open')
 })
 
+const menuItems = document.querySelectorAll('.menu-item');
+
+menuItems.forEach(item => {
+    item.addEventListener('click', function () {
+        hamburger.classList.remove('open');
+        navigation.classList.remove('menu-open');
+    })
+})
+// collapse.style.display = 'none'
 // OWL CAROUSEL TESTIMONIAL
 
 $(function () {

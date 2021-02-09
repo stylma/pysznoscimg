@@ -5,10 +5,34 @@
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    
+
+
     .containernew {
         background-color: rgba($color:#fff, $alpha: 0.9);
         font-family: $mainfontfamily;
+
+        #slider-gallery {
+            .owl-dots {
+                text-align: center;
+            }
+
+            .owl-dot {
+                display: inline-block;
+                height: 23px;
+                width: 23px;
+                background-color: #fff;
+                opacity: .8;
+                margin: 0 15px;
+                border-radius: 50%;
+                outline: none;
+            }
+
+            .owl-dot.active {
+
+                background-color: $logoBlue;
+
+            }
+        }
 
         .offer-top {
             text-align: center;
@@ -20,40 +44,43 @@
                 margin-right: 15px;
                 margin-left: 15px;
                 color: $logoBlue;
+
                 &:hover {
                     color: $logoPink;
                 }
             }
-            
+
         }
 
         .offer-bottom {
             padding-bottom: 40px;
-.offer-section {
-    padding: 10px;
- li {
-     color: $logoBlue;
-     font-size: 20px;
- }
 
- ol {
-  li {
-      font-size: 16px;
-      color: black;
-  } 
- }
+            .offer-section {
+                padding: 10px;
 
- a {
-     color: $logoPink;
-     text-decoration: none;
+                li {
+                    color: $logoBlue;
+                    font-size: 20px;
+                }
 
-     &:hover {
-         color: $logoBlue;
-     }
- }
-}
+                ol {
+                    li {
+                        font-size: 16px;
+                        color: black;
+                    }
+                }
 
-           
+                a {
+                    color: $logoPink;
+                    text-decoration: none;
+
+                    &:hover {
+                        color: $logoBlue;
+                    }
+                }
+            }
+
+
         }
     }
 }
@@ -258,7 +285,7 @@
             height: 4px;
             width: 100%;
             position: absolute;
-            background-color: $mainColor;
+            background-color: $secondaryColor;
             border-radius: 4px;
 
             &:nth-of-type(1) {
@@ -301,8 +328,8 @@
 }
 
 #slider-gallery {
-        padding: 40px;
-        border-radius: 25px;
+    padding: 40px;
+    border-radius: 25px;
 }
 
 .gallery {

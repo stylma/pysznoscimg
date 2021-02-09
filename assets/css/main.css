@@ -283,6 +283,17 @@ a {
   padding: 0 15px;
 }
 
+.owl-dot {
+  display: inline-block;
+  height: 23px;
+  width: 23px;
+  background-color: pink;
+  opacity: .8;
+  margin: 0 15px;
+  border-radius: 50%;
+  outline: none;
+}
+
 .tri {
   width: 0;
   height: 0;
@@ -750,6 +761,11 @@ a {
   padding-bottom: 5%;
 }
 
+.facts .container a {
+  text-decoration: none;
+  color: #ef64a6;
+}
+
 .facts .container h2 {
   text-align: center;
   color: white;
@@ -895,6 +911,12 @@ a {
   position: relative;
   background-position: top;
   position: relative;
+}
+
+@media (max-width: 800px) {
+  .watchvideo {
+    padding: 10px;
+  }
 }
 
 .watchvideo::after {
@@ -1176,7 +1198,7 @@ a {
 .navigation.menu-open ul li a {
   padding: 0;
   color: #222;
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Dancing Script', cursive;
   text-decoration: none;
 }
 
@@ -1196,7 +1218,7 @@ a {
 
 .navigation.move ul li a {
   color: #222;
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Dancing Script', cursive;
   text-decoration: none;
 }
 
@@ -1252,7 +1274,7 @@ a {
   color: #ffffff;
   padding: 30px 15px;
   display: inline-block;
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Dancing Script', cursive;
   font-size: 28px;
   text-decoration: none;
 }
@@ -1265,6 +1287,7 @@ a {
 }
 
 .navigation .hamburger {
+  margin: 2.5em;
   padding: 0;
   width: 40px;
   height: 24px;
@@ -1286,7 +1309,7 @@ a {
   height: 4px;
   width: 100%;
   position: absolute;
-  background-color: #ffffff;
+  background-color: #ef64a6;
   border-radius: 4px;
 }
 
@@ -1662,6 +1685,15 @@ form .form-box button:hover {
 
 .contact-us {
   padding: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .contact-us .containernew {
@@ -1678,11 +1710,39 @@ form .form-box button:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 0 auto;
+}
+
+@media (max-width: 800px) {
+  .contact-us .containernew {
+    width: 80vw;
+  }
+}
+
+.contact-us .containernew .icon {
+  color: #58d5D4;
+  font-size: 24px;
+}
+
+.contact-us .containernew .icon {
+  font-size: 12px;
+}
+
+@media screen and (min-width: 320px) {
+  .contact-us .containernew .icon {
+    font-size: calc(12px + 12 * ((100vw - 320px) / 850));
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .contact-us .containernew .icon {
+    font-size: 24px;
+  }
 }
 
 .contact-us .containernew h2 {
   text-align: center;
-  margin: 0 0 30px 0;
+  margin: 0;
   font-size: 40px;
   font-weight: 300;
   color: black;
@@ -1706,12 +1766,37 @@ form .form-box button:hover {
   }
 }
 
+.contact-us .containernew h5 {
+  text-align: center;
+  margin: 0;
+  font-size: 28px;
+  font-weight: 300;
+  color: black;
+  padding: 20px;
+}
+
+.contact-us .containernew h5 {
+  font-size: 18px;
+}
+
+@media screen and (min-width: 320px) {
+  .contact-us .containernew h5 {
+    font-size: calc(18px + 10 * ((100vw - 320px) / 850));
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .contact-us .containernew h5 {
+    font-size: 28px;
+  }
+}
+
 .contact-us .containernew p {
   text-align: center;
   font-size: 20px;
   font-weight: 300;
   margin-bottom: 40px;
-  margin: 0 auto 40px auto;
+  margin: 0;
   width: 60%;
   color: black;
 }
@@ -1948,6 +2033,22 @@ form .form-box button:hover {
   scroll-behavior: smooth;
 }
 
+.footer .footer-text a {
+  font-size: 18px;
+}
+
+@media screen and (min-width: 320px) {
+  .footer .footer-text a {
+    font-size: calc(18px + 6 * ((100vw - 320px) / 850));
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .footer .footer-text a {
+    font-size: 24px;
+  }
+}
+
 .footer .footer-text a:hover {
   color: pink;
   -webkit-transform: scale(1.1);
@@ -1977,6 +2078,22 @@ form .form-box button:hover {
   display: inline;
 }
 
+.footer-outer p {
+  font-size: 12px;
+}
+
+@media screen and (min-width: 320px) {
+  .footer-outer p {
+    font-size: calc(12px + 4 * ((100vw - 320px) / 850));
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .footer-outer p {
+    font-size: 16px;
+  }
+}
+
 .footer-outer span {
   color: pink;
   display: inline;
@@ -1993,6 +2110,25 @@ form .form-box button:hover {
 .cakes .containernew {
   background-color: rgba(255, 255, 255, 0.9);
   font-family: "Ubuntu", sans-serif;
+}
+
+.cakes .containernew #slider-gallery .owl-dots {
+  text-align: center;
+}
+
+.cakes .containernew #slider-gallery .owl-dot {
+  display: inline-block;
+  height: 23px;
+  width: 23px;
+  background-color: #fff;
+  opacity: .8;
+  margin: 0 15px;
+  border-radius: 50%;
+  outline: none;
+}
+
+.cakes .containernew #slider-gallery .owl-dot.active {
+  background-color: #58d5D4;
 }
 
 .cakes .containernew .offer-top {
@@ -2226,7 +2362,7 @@ form .form-box button:hover {
   height: 4px;
   width: 100%;
   position: absolute;
-  background-color: #ffffff;
+  background-color: #222;
   border-radius: 4px;
 }
 
