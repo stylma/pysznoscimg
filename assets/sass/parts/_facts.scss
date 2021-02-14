@@ -11,10 +11,10 @@
         padding-top: 5%;
         padding-bottom: 5%;
 
-a {
-    text-decoration: none;
-    color: $logoPink;
-}
+        a {
+            text-decoration: none;
+            color: $logoPink;
+        }
 
         h2 {
             text-align: center;
@@ -62,7 +62,7 @@ a {
                 border-radius: 25px;
                 height: 600px;
 
-               
+
 
 
                 h3 {
@@ -113,56 +113,78 @@ a {
                     font-family: $mainfontfamily;
                 }
 
+            }
+
+            .content-cake {
+                background-image: url(/assets/img/wypieki.jpg);
+                background-position: center;
+                background-size: cover;
+                text-align: center;
+                padding: 40px;
+                border-radius: 25px;
+                height: 600px;
+
+                h3 {
+                    font-size: 28px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    margin-bottom: 20px;
+                    font-family: $mainfontfamily;
+                }
 
             }
+
         }
     }
 
     .content-area {
-         &:hover {
-             .layer {
-                 opacity: 1;
-             }
-         }
+        &:hover {
 
-         .layer {
-             position: absolute;
-             background-color: rgba($color: $logoPink, $alpha: 0.5);
-             width: 100%;
-             height: 100%;
-             left: 0%;
-             top: 0%;
-             display: flex;
-             justify-content: center;
-             align-items: center;
-             opacity: 0;
-             transition: 0.3s;
-             border-radius: 25px;
+            .layer {
+                opacity: 1;
+            }
+        }
 
-             @media (max-width:700px) {
-                 position: static;
-                 margin: 20px 0 0 0;
-                 opacity: 1;
-             }
+        .layer {
+            position: absolute;
+            background-color: rgba($color: #fff, $alpha: 0.8);
+            width: 100%;
+            height: 100%;
+            left: 0%;
+            top: 0%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: 0.3s;
+            border-radius: 25px;
 
-             ul {
+            @media (max-width:700px) {
+                position: static;
+                margin: 20px 0 0 0;
+                opacity: 1;
+            }
+
+            ul {
                 list-style-type: none;
-                 li{
-                     a{
-                         text-transform: uppercase;
-                         font-weight: bold;
-                         text-decoration: none;
-                         color: #fff;
-                         font-size: 20px;
 
-                         &:hover {
-                             color: $logoBlue;
-                         }
-                     }
-                 }
-             }
+                li {
+                    a {
+                        text-align: center;
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        text-decoration: none;
+                        color: black;
+                        font-size: 20px;
 
-         }
+                        &:hover {
+                            color: $logoPink;
+                        }
+                    }
+                }
+            }
+
+        }
     }
 
 }

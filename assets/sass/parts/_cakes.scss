@@ -1,14 +1,13 @@
 .cakes {
     padding-top: 200px;
-
+background-image: url(/assets/img/unrevied/milad-b-fakurian-UiiHVEyxtyA-unsplash.jpg);
     // background-image: url(/assets/img/unrevied/deva-williamson-HFN0QzOWpGg-unsplash.jpg);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-
-
+      @include overlay(#fff, 0.2);
     .containernew {
-        background-color: rgba($color:#fff, $alpha: 0.9);
+        background-color: rgba($color:#fff, $alpha: 0.8);
         font-family: $mainfontfamily;
 
         #slider-gallery {
@@ -40,7 +39,7 @@
 
             a {
                 text-decoration: none;
-                font-size: 20px;
+                font-size: 24px;
                 margin-right: 15px;
                 margin-left: 15px;
                 color: $logoBlue;
@@ -60,13 +59,15 @@
 
                 li {
                     color: $logoBlue;
-                    font-size: 20px;
+                    font-size: 24px;
+                    font-weight: 700;
                 }
 
                 ol {
                     li {
                         font-size: 16px;
                         color: black;
+                        font-weight: 400;
                     }
                 }
 
@@ -79,7 +80,81 @@
                     }
                 }
             }
+.offer-price {
+    
+    h1 {
+        font-size: 3em;
+        font-weight: 300;
+        line-height: 1em;
+        text-align: center;
+        color: white;
+    }
 
+    h2 {
+        font-size: 1em;
+        font-weight: 300;
+        text-align: center;
+        display: block;
+        line-height: 1em;
+        padding-bottom: 2em;
+        color: black;
+    }
+
+    h2 a {
+        font-weight: 700;
+        text-transform: uppercase;
+        color: black;
+        text-decoration: none;
+    }
+
+    .container th h1 {
+        font-weight: bold;
+        font-size: 1em;
+        text-align: center;
+        color:black;
+    }
+
+    .container td {
+        font-weight: normal;
+        font-size: 1em;
+    }
+
+    .container {
+        text-align:center;
+        overflow: hidden;
+        width: 80%;
+        margin: 0 auto;
+        display: table;
+    }
+
+    .container td,
+    .container th {
+        width: 33%;
+        padding-bottom: 12px;
+        padding-top:12px;
+        padding-left:12px;
+    }
+
+    /* Background-color of the odd rows */
+    .container tr:nth-child(odd) {
+        background-color: #f8c0da;
+    }
+
+    /* Background-color of the even rows */
+    .container tr:nth-child(even) {
+        background-color: #9bd6d6;
+        ;
+    }
+
+    .container th {
+        background-color: white;
+    }
+
+    .container td:first-child {
+        color: black;
+    }
+
+}
 
         }
     }
@@ -106,6 +181,10 @@
 
             position: relative;
             z-index: 5;
+
+            .socials-nav {
+                color: black;
+            }
 
             .logo-black {
                 display: block;
@@ -167,6 +246,10 @@
 
         .logo {
 
+            .socials-nav {
+                color: black;
+            }
+
             .logo-black {
                 display: block;
 
@@ -207,8 +290,18 @@
 
 
     .logo {
+display: flex;
+justify-content: center;
+align-items: center;
+.socials-nav {
+    margin: 5px;
+    text-decoration: none;
+    color: black;
 
-
+    &:hover {
+        color: $logoPink;
+    }
+}
         .logo-black {
             display: none;
         }

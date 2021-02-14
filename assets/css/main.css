@@ -853,13 +853,31 @@ a {
   font-family: "Ubuntu", sans-serif;
 }
 
+.facts .container #slider-offer .content-cake {
+  background-image: url(/assets/img/wypieki.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  padding: 40px;
+  border-radius: 25px;
+  height: 600px;
+}
+
+.facts .container #slider-offer .content-cake h3 {
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-family: "Ubuntu", sans-serif;
+}
+
 .facts .content-area:hover .layer {
   opacity: 1;
 }
 
 .facts .content-area .layer {
   position: absolute;
-  background-color: rgba(239, 100, 166, 0.5);
+  background-color: rgba(255, 255, 255, 0.8);
   width: 100%;
   height: 100%;
   left: 0%;
@@ -892,15 +910,16 @@ a {
 }
 
 .facts .content-area .layer ul li a {
+  text-align: center;
   text-transform: uppercase;
   font-weight: bold;
   text-decoration: none;
-  color: #fff;
+  color: black;
   font-size: 20px;
 }
 
 .facts .content-area .layer ul li a:hover {
-  color: #58d5D4;
+  color: #ef64a6;
 }
 
 .watchvideo {
@@ -2132,13 +2151,25 @@ form .form-box button:hover {
 
 .cakes {
   padding-top: 200px;
+  background-image: url(/assets/img/unrevied/milad-b-fakurian-UiiHVEyxtyA-unsplash.jpg);
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
+  position: relative;
+}
+
+.cakes::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  top: 0;
+  left: 0;
 }
 
 .cakes .containernew {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.8);
   font-family: "Ubuntu", sans-serif;
 }
 
@@ -2168,7 +2199,7 @@ form .form-box button:hover {
 
 .cakes .containernew .offer-top a {
   text-decoration: none;
-  font-size: 20px;
+  font-size: 24px;
   margin-right: 15px;
   margin-left: 15px;
   color: #58d5D4;
@@ -2188,12 +2219,14 @@ form .form-box button:hover {
 
 .cakes .containernew .offer-bottom .offer-section li {
   color: #58d5D4;
-  font-size: 20px;
+  font-size: 24px;
+  font-weight: 700;
 }
 
 .cakes .containernew .offer-bottom .offer-section ol li {
   font-size: 16px;
   color: black;
+  font-weight: 400;
 }
 
 .cakes .containernew .offer-bottom .offer-section a {
@@ -2203,6 +2236,80 @@ form .form-box button:hover {
 
 .cakes .containernew .offer-bottom .offer-section a:hover {
   color: #58d5D4;
+}
+
+.cakes .containernew .offer-bottom .offer-price {
+  /* Background-color of the odd rows */
+  /* Background-color of the even rows */
+}
+
+.cakes .containernew .offer-bottom .offer-price h1 {
+  font-size: 3em;
+  font-weight: 300;
+  line-height: 1em;
+  text-align: center;
+  color: white;
+}
+
+.cakes .containernew .offer-bottom .offer-price h2 {
+  font-size: 1em;
+  font-weight: 300;
+  text-align: center;
+  display: block;
+  line-height: 1em;
+  padding-bottom: 2em;
+  color: black;
+}
+
+.cakes .containernew .offer-bottom .offer-price h2 a {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: black;
+  text-decoration: none;
+}
+
+.cakes .containernew .offer-bottom .offer-price .container th h1 {
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  color: black;
+}
+
+.cakes .containernew .offer-bottom .offer-price .container td {
+  font-weight: normal;
+  font-size: 1em;
+}
+
+.cakes .containernew .offer-bottom .offer-price .container {
+  text-align: center;
+  overflow: hidden;
+  width: 80%;
+  margin: 0 auto;
+  display: table;
+}
+
+.cakes .containernew .offer-bottom .offer-price .container td,
+.cakes .containernew .offer-bottom .offer-price .container th {
+  width: 33%;
+  padding-bottom: 12px;
+  padding-top: 12px;
+  padding-left: 12px;
+}
+
+.cakes .containernew .offer-bottom .offer-price .container tr:nth-child(odd) {
+  background-color: #f8c0da;
+}
+
+.cakes .containernew .offer-bottom .offer-price .container tr:nth-child(even) {
+  background-color: #9bd6d6;
+}
+
+.cakes .containernew .offer-bottom .offer-price .container th {
+  background-color: white;
+}
+
+.cakes .containernew .offer-bottom .offer-price .container td:first-child {
+  color: black;
 }
 
 .navigation-cake {
@@ -2232,6 +2339,10 @@ form .form-box button:hover {
 .navigation-cake.menu-open .logo {
   position: relative;
   z-index: 5;
+}
+
+.navigation-cake.menu-open .logo .socials-nav {
+  color: black;
 }
 
 .navigation-cake.menu-open .logo .logo-black {
@@ -2292,6 +2403,10 @@ form .form-box button:hover {
   transition: 0.5s;
 }
 
+.navigation-cake.move .logo .socials-nav {
+  color: black;
+}
+
 .navigation-cake.move .logo .logo-black {
   display: block;
 }
@@ -2315,6 +2430,28 @@ form .form-box button:hover {
 
 .navigation-cake.move .hamburger span {
   background-color: #222;
+}
+
+.navigation-cake .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navigation-cake .logo .socials-nav {
+  margin: 5px;
+  text-decoration: none;
+  color: black;
+}
+
+.navigation-cake .logo .socials-nav:hover {
+  color: #ef64a6;
 }
 
 .navigation-cake .logo .logo-black {
