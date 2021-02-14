@@ -357,7 +357,6 @@ a {
   background-image: url("/assets/img/unrevied/brooke-lark-pgm4sjt_bdq-unsplash.jpg");
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
   background-repeat: no-repeat;
   -o-background-size: cover;
   -moz-background-size: cover;
@@ -392,7 +391,6 @@ a {
 @media (max-width: width 1000px) {
   .driver {
     background-position: left center;
-    background-attachment: scroll;
   }
 }
 
