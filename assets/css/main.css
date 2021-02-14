@@ -357,7 +357,6 @@ a {
   background-image: url("/assets/img/unrevied/bg111-min.png");
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
   background-repeat: no-repeat;
   -o-background-size: cover;
   -moz-background-size: cover;
