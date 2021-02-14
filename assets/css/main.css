@@ -1150,6 +1150,10 @@ a {
   z-index: 5;
 }
 
+.navigation.menu-open .logo .socials-nav {
+  color: black;
+}
+
 .navigation.menu-open .logo .logo-black {
   display: block;
 }
@@ -1208,6 +1212,10 @@ a {
   transition: 0.5s;
 }
 
+.navigation.move .logo .socials-nav {
+  color: black;
+}
+
 .navigation.move .logo .logo-black {
   display: block;
 }
@@ -1231,6 +1239,28 @@ a {
 
 .navigation.move .hamburger span {
   background-color: #222;
+}
+
+.navigation .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navigation .logo .socials-nav {
+  margin: 5px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.navigation .logo .socials-nav:hover {
+  color: #ef64a6;
 }
 
 .navigation .logo .logo-black {

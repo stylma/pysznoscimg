@@ -17,6 +17,10 @@
             position: relative;
             z-index: 5;
 
+            .socials-nav {
+                color: black;
+            }
+
             .logo-black {
                 display: block;
             }
@@ -68,6 +72,11 @@
         transition: 0.5s;
 
         .logo {
+
+            .socials-nav {
+                color: black;
+            }
+
             .logo-black {
                 display: block;
             }
@@ -101,6 +110,21 @@
     }
 
     .logo {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .socials-nav {
+            margin: 5px;
+            text-decoration: none;
+            color: #ffffff;
+
+            &:hover {
+                color: $logoPink;
+            }
+        }
+
         .logo-black {
             display: none;
         }

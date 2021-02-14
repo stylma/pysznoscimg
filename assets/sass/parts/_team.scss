@@ -1,0 +1,93 @@
+.team {
+    padding: 100px 0;
+
+    .members {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -15px;
+
+        .member {
+            width: calc(100%/3);
+            padding: 15px;
+
+            @media(max-width: 700px) {
+                width: 100%;
+            }
+        }
+
+        .photo {
+            margin-bottom: 20px;
+            position: relative;
+
+
+            &:hover {
+
+                .layer {
+                    opacity: 1;
+                }
+            }
+
+            .layer {
+                position: absolute;
+                background-color: rgba($color: #ffffff, $alpha: 0.8);
+                width: 100%;
+                height: 100%;
+                left: 0%;
+                top: 0%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                opacity: 0;
+                transition: 0.3s;
+
+                @media (max-width:700px) {
+                    position: static;
+                    margin: 20px 0 0 0;
+                    opacity: 1;
+                }
+
+                a {
+                    font-size: 18px;
+                    border: 1px solid $secondaryColor;
+                    color: $secondaryColor;
+                    width: 30px;
+                    height: 30px;
+                    text-align: center;
+                    line-height: 30px;
+                    transform: rotate(45deg);
+                    margin: 0 20px;
+                    transition: 0.3s;
+
+                    &:hover {
+                        background-color: $secondaryColor;
+                        color: $mainColor;
+                    }
+
+                    i {
+                        transform: rotate(-45deg);
+                    }
+                }
+            }
+
+            img {
+                display: block;
+                max-width: 100%;
+
+            }
+        }
+
+        .name {
+            text-align: center;
+            margin: 10px;
+            text-transform: uppercase;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .range {
+            text-align: center;
+            font-size: 16px;
+            font-weight: 300;
+        }
+    }
+}
