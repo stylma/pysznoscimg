@@ -90,7 +90,11 @@ code,
 kbd,
 samp,
 pre {
-  font-family: SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+  font-family: SFMono-Regular,
+ Consolas,
+ 'Liberation Mono',
+ Menlo,
+ monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -466,7 +470,8 @@ a {
   z-index: 1;
   text-align: center;
   font-weight: 400;
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Dancing Script',
+ cursive;
   padding-top: 100px;
 }
 
@@ -524,7 +529,8 @@ a {
   line-height: 1;
   font-weight: 600;
   letter-spacing: 1px;
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Dancing Script',
+ cursive;
 }
 
 .driver .button:hover {
@@ -619,6 +625,7 @@ a {
   line-height: 1.4;
   color: #222;
 }
+
 
 .skills {
   padding: 100px 0;
@@ -773,7 +780,8 @@ a {
   text-align: center;
   color: white;
   text-transform: uppercase;
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Dancing Script',
+ cursive;
   font-size: 30px;
   font-weight: bold;
   background-color: rgba(0, 0, 0, 0.5);
@@ -2080,7 +2088,8 @@ form .form-box button:hover {
   text-decoration: none;
   color: white;
   margin: 10px;
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Dancing Script',
+ cursive;
   font-size: 24px;
   scroll-behavior: smooth;
 }
@@ -2396,7 +2405,8 @@ form .form-box button:hover {
 .navigation-cake.menu-open ul li a {
   padding: 0;
   color: #222;
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Dancing Script',
+ cursive;
   text-decoration: none;
 }
 
@@ -2420,7 +2430,8 @@ form .form-box button:hover {
 
 .navigation-cake.move ul li a {
   color: #222;
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Dancing Script',
+ cursive;
   text-decoration: none;
 }
 
@@ -2498,7 +2509,8 @@ form .form-box button:hover {
   color: #222;
   padding: 30px 15px;
   display: inline-block;
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Dancing Script',
+ cursive;
   font-size: 28px;
   text-decoration: none;
 }
