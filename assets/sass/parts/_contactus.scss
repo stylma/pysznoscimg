@@ -1,6 +1,6 @@
  .contact-us {
 
-     padding: 100px;
+     padding: 100px 0;
      display: flex;
      align-items: center;
      justify-content: center;
@@ -12,9 +12,10 @@
          align-items: center;
          justify-content: center;
          margin: 0 auto;
+         width: 95vw;
 
          @media (max-width: 800px) {
-             width: 80vw;
+             width: 95vw;
          }
 
          .icon {
@@ -23,13 +24,13 @@
                  color: #58d5D4;
                  font-size: 24px;
                  text-decoration: none;
-                 @include fluid-type(10px, 24px)
+                 @include fluid-type(12px, 24px)
              }
 
              color: #58d5D4;
              font-size: 24px;
              text-decoration: none;
-             @include fluid-type(10px, 24px)
+             @include fluid-type(12px, 24px)
          }
 
          h2 {

@@ -1746,7 +1746,7 @@ form .form-box button:hover {
 }
 
 .contact-us {
-  padding: 100px;
+  padding: 100px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1773,11 +1773,12 @@ form .form-box button:hover {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0 auto;
+  width: 95vw;
 }
 
 @media (max-width: 800px) {
   .contact-us .containernew {
-    width: 80vw;
+    width: 95vw;
   }
 }
 
@@ -1794,12 +1795,12 @@ form .form-box button:hover {
 }
 
 .contact-us .containernew .icon a {
-  font-size: 10px;
+  font-size: 12px;
 }
 
 @media screen and (min-width: 320px) {
   .contact-us .containernew .icon a {
-    font-size: calc(10px + 14 * ((100vw - 320px) / 850));
+    font-size: calc(12px + 12 * ((100vw - 320px) / 850));
   }
 }
 
@@ -1810,12 +1811,12 @@ form .form-box button:hover {
 }
 
 .contact-us .containernew .icon {
-  font-size: 10px;
+  font-size: 12px;
 }
 
 @media screen and (min-width: 320px) {
   .contact-us .containernew .icon {
-    font-size: calc(10px + 14 * ((100vw - 320px) / 850));
+    font-size: calc(12px + 12 * ((100vw - 320px) / 850));
   }
 }
 
