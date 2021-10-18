@@ -90,11 +90,7 @@ code,
 kbd,
 samp,
 pre {
-  font-family: SFMono-Regular,
- Consolas,
- 'Liberation Mono',
- Menlo,
- monospace;
+  font-family: SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -470,8 +466,7 @@ a {
   z-index: 1;
   text-align: center;
   font-weight: 400;
-  font-family: 'Dancing Script',
- cursive;
+  font-family: 'Dancing Script', cursive;
   padding-top: 100px;
 }
 
@@ -529,8 +524,7 @@ a {
   line-height: 1;
   font-weight: 600;
   letter-spacing: 1px;
-  font-family: 'Dancing Script',
- cursive;
+  font-family: 'Dancing Script', cursive;
 }
 
 .driver .button:hover {
@@ -625,7 +619,6 @@ a {
   line-height: 1.4;
   color: #222;
 }
-
 
 .skills {
   padding: 100px 0;
@@ -766,6 +759,10 @@ a {
   left: 0;
 }
 
+.facts ul {
+  text-align: center !important;
+}
+
 .facts .container {
   padding-top: 5%;
   padding-bottom: 5%;
@@ -774,14 +771,14 @@ a {
 .facts .container a {
   text-decoration: none;
   color: #ef64a6;
+  text-align: center !important;
 }
 
 .facts .container h2 {
   text-align: center;
   color: white;
   text-transform: uppercase;
-  font-family: 'Dancing Script',
- cursive;
+  font-family: 'Dancing Script', cursive;
   font-size: 30px;
   font-weight: bold;
   background-color: rgba(0, 0, 0, 0.5);
@@ -815,7 +812,7 @@ a {
   background-position: center;
   background-size: cover;
   text-align: center;
-  padding: 40px;
+  padding-top: 40px;
   border-radius: 25px;
   height: 600px;
 }
@@ -833,7 +830,7 @@ a {
   background-position: center;
   background-size: cover;
   text-align: center;
-  padding: 40px;
+  padding-top: 40px;
   border-radius: 25px;
   height: 600px;
 }
@@ -851,7 +848,7 @@ a {
   background-position: center;
   background-size: cover;
   text-align: center;
-  padding: 40px;
+  padding-top: 40px;
   border-radius: 25px;
   height: 600px;
 }
@@ -869,7 +866,7 @@ a {
   background-position: center;
   background-size: cover;
   text-align: center;
-  padding: 40px;
+  padding-top: 40px;
   border-radius: 25px;
   height: 600px;
 }
@@ -918,6 +915,7 @@ a {
 
 .facts .content-area .layer ul {
   list-style-type: none;
+  text-align: center;
 }
 
 .facts .content-area .layer ul li a {
@@ -931,6 +929,10 @@ a {
 
 .facts .content-area .layer ul li a:hover {
   color: #ef64a6;
+}
+
+.facts .owl-item .active {
+  padding: 0;
 }
 
 .watchvideo {
@@ -1782,6 +1784,29 @@ form .form-box button:hover {
 .contact-us .containernew .icon {
   color: #58d5D4;
   font-size: 24px;
+  text-decoration: none;
+}
+
+.contact-us .containernew .icon a {
+  color: #58d5D4;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.contact-us .containernew .icon a {
+  font-size: 12px;
+}
+
+@media screen and (min-width: 320px) {
+  .contact-us .containernew .icon a {
+    font-size: calc(12px + 12 * ((100vw - 320px) / 850));
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .contact-us .containernew .icon a {
+    font-size: 24px;
+  }
 }
 
 .contact-us .containernew .icon {
@@ -2088,8 +2113,7 @@ form .form-box button:hover {
   text-decoration: none;
   color: white;
   margin: 10px;
-  font-family: 'Dancing Script',
- cursive;
+  font-family: 'Dancing Script', cursive;
   font-size: 24px;
   scroll-behavior: smooth;
 }
@@ -2405,8 +2429,7 @@ form .form-box button:hover {
 .navigation-cake.menu-open ul li a {
   padding: 0;
   color: #222;
-  font-family: 'Dancing Script',
- cursive;
+  font-family: 'Dancing Script', cursive;
   text-decoration: none;
 }
 
@@ -2430,8 +2453,7 @@ form .form-box button:hover {
 
 .navigation-cake.move ul li a {
   color: #222;
-  font-family: 'Dancing Script',
- cursive;
+  font-family: 'Dancing Script', cursive;
   text-decoration: none;
 }
 
@@ -2509,8 +2531,7 @@ form .form-box button:hover {
   color: #222;
   padding: 30px 15px;
   display: inline-block;
-  font-family: 'Dancing Script',
- cursive;
+  font-family: 'Dancing Script', cursive;
   font-size: 28px;
   text-decoration: none;
 }

@@ -7,6 +7,12 @@
     background-attachment: fixed;
     @include overlay(#000, 0.2);
 
+    ul {
+        text-align: center !important;
+    }
+
+
+    
     .container {
         padding-top: 5%;
         padding-bottom: 5%;
@@ -14,6 +20,7 @@
         a {
             text-decoration: none;
             color: $logoPink;
+            text-align: center !important;
         }
 
         h2 {
@@ -58,7 +65,7 @@
                 background-position: center;
                 background-size: cover;
                 text-align: center;
-                padding: 40px;
+                padding-top: 40px;
                 border-radius: 25px;
                 height: 600px;
 
@@ -81,7 +88,7 @@
                 background-position: center;
                 background-size: cover;
                 text-align: center;
-                padding: 40px;
+                padding-top: 40px;
                 border-radius: 25px;
                 height: 600px;
 
@@ -101,7 +108,7 @@
                 background-position: center;
                 background-size: cover;
                 text-align: center;
-                padding: 40px;
+                padding-top: 40px;
                 border-radius: 25px;
                 height: 600px;
 
@@ -120,7 +127,7 @@
                 background-position: center;
                 background-size: cover;
                 text-align: center;
-                padding: 40px;
+                padding-top: 40px;
                 border-radius: 25px;
                 height: 600px;
 
@@ -159,6 +166,7 @@
             transition: 0.3s;
             border-radius: 25px;
 
+
             @media (max-width:700px) {
                 position: static;
                 margin: 20px 0 0 0;
@@ -167,6 +175,7 @@
 
             ul {
                 list-style-type: none;
+                text-align: center;
 
                 li {
                     a {
@@ -185,6 +194,10 @@
             }
 
         }
+    }
+
+    .owl-item .active {
+        padding: 0;
     }
 
 }
