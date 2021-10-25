@@ -210,11 +210,65 @@
             </div>
     </section>
 
+    <section class="gallery">
+        <div class="containernew">
+            <div id="slider-gallery" class="owl-carousel owl-theme">
+                <div class="content-area">
+                    <img src="assets/img/cakes/zdjecia 3.jpg" alt="">
+                </div>
+                <div class="content-area">
+                    <img src="assets/img/cakes/zdjecie 4.jpg" alt="">
+                </div>
+                <div class="content-area">
+                    <img src="assets/img/cakes/zdjecie 5.jpg" alt="">
+                </div>
+                <div class="content-area">
+                    <img src="assets/img/cakes/zdjecie 6.jpg" alt="">
+                </div>
+                <div class="content-area">
+                    <img src="assets/img/cakes/zdjecie 7.jpg" alt="">
+                </div>
+                <div class="content-area">
+                    <img src="assets/img/cakes/zdjecie 8.jpg" alt="">
+                </div>
+                <div class="content-area">
+                    <img src="assets/img/cakes/zdjecie 10.jpg" alt="">
+                </div>
+                <div class="content-area">
+                    <img src="assets/img/cakes/zdjecie 11.jpg" alt="">
+                </div>
+                <div class="content-area">
+                    <img src="assets/img/cakes/zdjecie 13.jpg" alt="">
+                </div>
+                <div class="content-area">
+                    <img src="assets/img/cakes/zdjecie 14.jpg" alt="">
+                </div>
+                <div class="content-area">
+                    <img src="assets/img/cakes/zdjecie 16.jpg" alt="">
+                </div>
+                <div class="content-area">
+                    <img src="assets/img/cakes/zdjecie 17.jpg" alt="">
+                </div>
+                <div class="content-area">
+                    <img src="assets/img/cakes/zdjecie 18.jpg" alt="">
+                </div>
+                <div class="content-area">
+                    <img src="assets/img/cakes/zdjecie 19.jpg" alt="">
+                </div>
+                <div class="content-area">
+                    <img src="assets/img/cakes/zdjecie 20.jpg" alt="">
+                </div>
+                <div class="content-area">
+                    <img src="assets/img/cakes/zdjecie 21.jpg" alt="">
+                </div>
+  
+            </div>
+        </div>
+    </section>
 
     <section class="contact-us" id="contact">
         <div class="containernew">
             <div>
-                <h2>Napisz do Nas</h2>
                 <h5>Masz pytania o ofertę lub chcesz złożyć zamówienie?<br>Zapraszamy do kontaktu</h5>
             </div>
 
@@ -274,31 +328,17 @@
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script src="assets/js/scripts.js"></script>
-    <script>
-        $('#slider').owlCarousel({
-            loop: true,
-            margin: 15,
-            nav: false,
-            dots: true,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                600: {
-                    items: 2
-                },
-                1000: {
-                    items: 3
-                }
-            }
-        })
-    </script>
+    
     <script>
         $('#slider-offer').owlCarousel({
             loop: true,
             margin: 15,
-            nav: false,
-            dots: true,
+            nav: true,
+            navText: [
+                "<i class='fa fa-caret-left'></i>",
+                "<i class='fa fa-caret-right'></i>"
+            ],
+            dots: false,
             responsive: {
                 0: {
                     items: 1
@@ -308,6 +348,28 @@
                 },
                 1000: {
                     items: 4
+                }
+            }
+        })
+    </script>
+    <script>
+        $('#slider-gallery').owlCarousel({
+            loop: true,
+            margin: 15,
+             nav: true,
+            navText: [
+                "<i class='fa fa-caret-left'></i>",
+                "<i class='fa fa-caret-right'></i>"
+            ],
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 3
                 }
             }
         })

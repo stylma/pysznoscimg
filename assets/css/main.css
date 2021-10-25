@@ -352,6 +352,32 @@ a {
   }
 }
 
+.owl-carousel .item {
+  position: relative;
+  z-index: 100;
+  -webkit-backface-visibility: hidden;
+}
+
+/* end fix */
+.owl-nav > div {
+  margin-top: -26px;
+  position: absolute;
+  top: 50%;
+  color: #cdcbcd;
+}
+
+.owl-nav i {
+  font-size: 52px;
+}
+
+.owl-nav .owl-prev {
+  left: -30px;
+}
+
+.owl-nav .owl-next {
+  right: -30px;
+}
+
 .driver {
   height: 100vh;
   background-image: url("/assets/img/unrevied/brooke-lark-pgm4sjt_bdq-unsplash.jpg");
@@ -1746,7 +1772,7 @@ form .form-box button:hover {
 }
 
 .contact-us {
-  padding: 100px 0;
+  padding: 33px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2604,12 +2630,11 @@ form .form-box button:hover {
 }
 
 #slider-gallery {
-  padding: 40px;
+  padding-top: 66px;
   border-radius: 25px;
 }
 
 .gallery {
-  background-image: url(/assets/img/unrevied/deva-williamson-HFN0QzOWpGg-unsplash.jpg);
   background-position: center;
   background-size: cover;
 }

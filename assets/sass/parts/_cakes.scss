@@ -1,11 +1,11 @@
 .cakes {
     padding-top: 200px;
-background-image: url(/assets/img/unrevied/milad-b-fakurian-UiiHVEyxtyA-unsplash.jpg);
+    background-image: url(/assets/img/unrevied/milad-b-fakurian-UiiHVEyxtyA-unsplash.jpg);
     // background-image: url(/assets/img/unrevied/deva-williamson-HFN0QzOWpGg-unsplash.jpg);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-      @include overlay(#fff, 0.2);
+    @include overlay(#fff, 0.2);
     .containernew {
         background-color: rgba($color:#fff, $alpha: 0.8);
         font-family: $mainfontfamily;
@@ -421,13 +421,13 @@ align-items: center;
 }
 
 #slider-gallery {
-    padding: 40px;
+    padding-top: 66px;
     border-radius: 25px;
 }
 
 .gallery {
-    background-image: url(/assets/img/unrevied/deva-williamson-HFN0QzOWpGg-unsplash.jpg);
     background-position: center;
     background-size: cover;
+
 
 }
