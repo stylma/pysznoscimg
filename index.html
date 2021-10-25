@@ -170,7 +170,7 @@
                             <li><a href="mini_pysznosci.html#mini">Monoporcje</a></li>
                             <li><a href="mini_pysznosci.html#mini">Tartaletki</a></li>
                             <li><a href="mini_pysznosci.html#mini">Cake Pops</a></li>
-                            <li><a href="mini_pysznosci.html#mini">Ice Lollies</a></li>
+                            <li><a href="mini_pysznosci.html#mini">Ice Cakesicles</a></li>
                             <li><a href="mini_pysznosci.html#mini">Owoce w czekoladzie</a></li>
                             <li><a href="mini_pysznosci.html#mini">Muffiny</a></li>
                             <li><a href="mini_pysznosci.html#mini">Makaroniki</a></li>
@@ -185,9 +185,7 @@
                     </div>
                     <div class="layer">
                         <ul style="padding: 0 !important;">
-                            <li><a href="slodki_stol.html#sweet">Imprezy okolicznościowe</a></li>
-                            <li><a href="slodki_stol.html#sweet">Imprezy firmowe</a></li>
-                            <li><a href="slodki_stol.html#sweet">Wesela</a></li>
+                            <li><a href="slodki_stol.html#sweet">Imprezy okolicznościowe <br> Imprezy firmowe <br>Wesela</a></li>
                         </ul>
                     </div>
                 </div>
@@ -356,7 +354,14 @@
         $('#slider-gallery').owlCarousel({
             loop: true,
             margin: 15,
-             nav: true,
+            nav: true,
+            dots: false,
+            animateOut: 'fadeOut',
+            autoplay: true,
+            autoplay: true,
+            autoPlaySpeed: 1000,
+            autoPlayTimeout: 5000,
+            autoplayHoverPause: true,
             navText: [
                 "<i class='fa fa-caret-left'></i>",
                 "<i class='fa fa-caret-right'></i>"
