@@ -12,7 +12,7 @@
     }
 
 
-    
+
     .container {
         padding-top: 5%;
         padding-bottom: 5%;
@@ -67,9 +67,7 @@
                 text-align: center;
                 padding-top: 40px;
                 border-radius: 25px;
-                height: 600px;
-
-
+                height: 400px;
 
 
                 h3 {
@@ -90,7 +88,7 @@
                 text-align: center;
                 padding-top: 40px;
                 border-radius: 25px;
-                height: 600px;
+                height: 400px;
 
                 h3 {
                     font-size: 28px;
@@ -110,7 +108,7 @@
                 text-align: center;
                 padding-top: 40px;
                 border-radius: 25px;
-                height: 600px;
+                height: 400px;
 
                 h3 {
                     font-size: 28px;
@@ -129,7 +127,7 @@
                 text-align: center;
                 padding-top: 40px;
                 border-radius: 25px;
-                height: 600px;
+                height: 400px;
 
                 h3 {
                     font-size: 28px;
@@ -145,12 +143,23 @@
     }
 
     .content-area {
-        &:hover {
 
-            .layer {
-                opacity: 1;
+        a {
+            :hover {
+
+                @include overlay(pink, 0.3);
+
+            }
+
+            h3 {
+                z-index: 300;
             }
         }
+
+        .layer {
+            opacity: 1;
+        }
+
 
         .layer {
             position: absolute;
